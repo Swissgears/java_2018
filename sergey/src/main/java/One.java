@@ -26,9 +26,13 @@ public class One {
         System.out.println("f1 = " + f1);
         System.out.println("");
 
-        System.out.print(f2 = (x - (50 + y * z) * n) + x);
-        System.out.print(f3 = x * (y / (z-1) + 555) - n);
-        System.out.print(f4 = -x / y + z * (n+1));
+        f2 = (int)((x - (50 + y * z) * n) + x);
+        System.out.println("f2 = (x - (50 + y * z) * n) + x");
+        System.out.println("f2 = " + f2);
+        System.out.println("");
+
+//        System.out.print(f3 = x * (y / (z-1) + 555) - n);
+//        System.out.print(f4 = -x / y + z * (n+1));
     }
 }
 
