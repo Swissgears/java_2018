@@ -12,13 +12,13 @@ public class One {
         double f4;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("введи число");
+        System.out.println("введи число x");
         x = scanner.nextDouble();
-        System.out.println("введи число");
+        System.out.println("введи число y");
         y = scanner.nextDouble();
-        System.out.println("введи число");
+        System.out.println("введи число z");
         z = scanner.nextDouble();
-        System.out.println("введи число");
+        System.out.println("введи число n");
         n = scanner.nextDouble();
 
         f1 = (long)(x + (y - 100) * z / n);
@@ -31,8 +31,16 @@ public class One {
         System.out.println("f2 = " + f2);
         System.out.println("");
 
-//        System.out.print(f3 = x * (y / (z-1) + 555) - n);
-//        System.out.print(f4 = -x / y + z * (n+1));
+        f3 = (float) (x * (y / (z-1) + 555) - n);
+        System.out.println("f3 = x * (y / (z-1) + 555) - n");
+        System.out.println("f3 = " + f3);
+        System.out.println("");
+
+        f4 = -x / y + z * (n+1);
+        System.out.println("f4 = -x / y + z * (n+1)");
+        System.out.println("f4 = " + f4);
+        System.out.println("");
+
     }
 }
 
