@@ -3,11 +3,16 @@ import java.util.Scanner;
 public class HomeWork2_4 {
     public static void main(String[] args) {
         int n = inputInt();
+        if (n <= 1){
+            System.out.println("Число " + n + " не является степенью двойки" + "\n");
+            System.exit(0);
+        }
         if (fact(n)) {
             System.out.println("Число " + n + " является степенью двойки" + "\n");
         } else
             System.out.println("Число " + n + " не является степенью двойки" + "\n");
     }
+
 
     static int inputInt() {
         Scanner scanner = new Scanner(System.in);
@@ -18,18 +23,15 @@ public class HomeWork2_4 {
     }
 
     static boolean fact(int n) {
-        if (n == 1){ 
-            return false;
+
+                if (n % 2 == 0) {
+                    return fact(n / 2);
+                } else if (n == 1) {
+                    return true;
+                } else
+                    return false;
+            }
+
         }
-        while (n > 0) {
-            if (n % 2 == 0) {
-                return fact(n / 2);
-            } else if (n == 1) {
-                return true;
-            } else
-                return false;
-        }
-        return false;
-    }
-}
+
 
